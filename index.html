@@ -265,6 +265,25 @@ main{max-width:1450px;padding:22px 25px 64px}.stats{gap:12px;margin-bottom:28px}
 .badge{border-radius:3px}.tier{color:#ffd997;border-color:#846238;background:#38271255}.training{color:#afcf9c}.unit,.rankline,.stage{border-radius:6px;box-shadow:0 7px 26px #0007}.unithead{background:linear-gradient(100deg,#211818,#100d0e);border-bottom:1px solid #42292a}.unithead h3{letter-spacing:1.4px;text-transform:uppercase}.unithead .label{color:#dfb680}.rankline{background:#100e10}.notice{border-radius:4px;font-size:12px;background:#231717;border-color:#774439;color:#e7c89c}.foot{background:#070607;border-top-color:#61252a}
 @media(max-width:700px){.hero .wrap{padding:0 16px}.hero-copy{display:block;padding:10px 0 20px}.hero-copy>.label{font-size:9px}.hero h1{margin:8px 0;font-size:clamp(23px,5vw,36px)}.hero p{margin-bottom:10px}.navlinks button,.navlinks a{font-size:10px;letter-spacing:0;padding:8px}main{padding:16px}.brand-art{width:65px}.hero-visual{min-height:0}.sectionhead h2{font-size:23px}}
 
+
+
+/* Classic Stormbound navigation — matched to original roster */
+header{background:#0b0809;border-bottom:1px solid #a52a2b;box-shadow:0 4px 24px #0009}
+nav{max-width:1600px;padding:13px 28px;gap:18px 30px;justify-content:space-between}
+nav .navlinks{display:flex;flex:1 1 auto;align-items:center;justify-content:space-evenly;flex-wrap:wrap;gap:8px 12px;margin-left:0}
+.navlinks a,.navlinks button,.jump a{position:relative;display:inline-flex;align-items:center;justify-content:center;min-height:41px;padding:11px 15px;border:1px solid transparent;border-radius:3px;background:transparent;box-shadow:none;color:#f0ede8;text-decoration:none;font:750 12px/1.4 system-ui,sans-serif;letter-spacing:.65px;text-transform:uppercase;white-space:nowrap;transition:background .16s,border-color .16s,color .16s}
+.navlinks a:before,.navlinks button:before,.jump a:before{display:none}
+.navlinks a:hover,.navlinks button:hover,.jump a:hover,.navlinks button.on,.navlinks a[aria-current="page"],body:has(#ranks:target) .navlinks a[href="#ranks"],body:has(#qualifications:target) .navlinks a[href="#qualifications"],body:has(#appointments:target) .navlinks a[href="#appointments"],body:has(#tier1:target) .navlinks a[href="#tier1"],body:has(#awards:target) .navlinks a[href="#awards"],body:has(#faq:target) .navlinks a[href="#faq"]{background:#250c10;border-color:#b63835;color:#ffe4bb;box-shadow:none;text-decoration:none;transform:none}
+.navlinks a.nav-feature,.navlinks a#staffLink,.jump a:first-child{background:#250c10;border-color:#b63835;color:#ffe4bb;box-shadow:none}
+.navlinks a.nav-feature:hover,.navlinks a#staffLink:hover,.jump a:first-child:hover{background:#381317;border-color:#e15a50;color:#fff0d8}
+.navlinks a:focus-visible,.navlinks button:focus-visible,.jump a:focus-visible{outline:2px solid #f0cc8c;outline-offset:3px}
+.jump{gap:12px}
+.jump a{border-color:#72413b;background:#120c0e}
+@media(max-width:1200px){nav .navlinks{flex-basis:100%;justify-content:center;gap:8px 14px}nav{justify-content:center;gap:12px;padding:12px 24px}}
+@media(max-width:700px){nav{padding:10px 14px;gap:8px}.navlinks a,.navlinks button,.jump a{padding:9px 11px;font-size:11px;letter-spacing:.35px;min-height:40px}.navlinks{gap:4px 6px}header{position:static}html{scroll-padding-top:15px}}
+@media(min-width:701px) and (max-width:1200px){html{scroll-padding-top:165px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.navlinks a,.navlinks button,.jump a{transition:none}}
+
 </style>
 </head>
 <body>
@@ -281,6 +300,7 @@ main{max-width:1450px;padding:22px 25px 64px}.stats{gap:12px;margin-bottom:28px}
       <button data-view="roster">Full roster</button>
       <button data-view="training">Green Team</button>
       <button data-view="ranks">Rank hierarchy</button>
+      <a class="nav-feature" href="./pathway.html">Operator Pathway</a>
       <a href="./admin.html" id="staffLink">Staff login ↗</a>
     </div>
   </nav>
